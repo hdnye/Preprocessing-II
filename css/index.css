@@ -245,6 +245,21 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.home .content-pick .btn {
+  border-radius: 15px;
+  border-size: 1px;
+  border-type: solid;
+  background-color: teal;
+  color: white;
+  font-size: 1.75rem;
+  padding: 2%;
+  width: 200px;
+  height: 45px;
+}
+.home .content-pick .btn:hover {
+  background: white;
+  color: teal;
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;

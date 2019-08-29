@@ -1,19 +1,23 @@
 // Mixins in here
 .button(@border-size; @border-type) {
-    border-radius: 10%;
-    border-color: black;
+    border-radius: 15px;
     border-size: @border-size;
     border-type: @border-type;
     background-color: teal;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     padding: 2%;
-
-
-}
+    width: 200px;
+    height: 45px;
+   }
 
 .display(@justify; @align){
     display: flex;
     justify-content: @justify;
     align-items: @align;
+}
+
+// Media Queries
+@media(max-width: 500px) {
+    
 }
