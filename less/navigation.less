@@ -4,8 +4,13 @@ header  {
     border-bottom: 2px lightgrey dashed;
     width: 100%;
     padding: 5% 0 2% 0;
+ 
+    @media @mobile {
+      display: flex;
+      flex-flow: row-reverse wrap;
+      align-content: center;
   }
-  
+}
   nav  {
      .display(space-around; flex-end);
      width: 80%;
@@ -17,3 +22,4 @@ header  {
       text-decoration: none;
       color: black;
   }
+  

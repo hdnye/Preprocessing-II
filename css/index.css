@@ -176,6 +176,13 @@ header {
   width: 100%;
   padding: 5% 0 2% 0;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-content: center;
+  }
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -199,6 +206,11 @@ a {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home .container {
+    width: 100%;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -211,11 +223,11 @@ a {
 }
 .home .content-section .text-content {
   width: 48%;
-  padding: 2%;
+  padding: 3%;
 }
 .home .content-section .img-content {
   width: 48%;
-  padding: 2%;
+  padding: 3%;
 }
 .home .content-section .img-content img {
   border-radius: 10px;
