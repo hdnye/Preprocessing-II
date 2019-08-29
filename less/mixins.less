@@ -1,6 +1,15 @@
 // Mixins in here
-.button() {
-    
+.button(@border-size; @border-type) {
+    border-radius: 10%;
+    border-color: black;
+    border-size: @border-size;
+    border-type: @border-type;
+    background-color: teal;
+    color: white;
+    font-size: 1.5rem;
+    padding: 2%;
+
+
 }
 
 .display(@justify; @align){
