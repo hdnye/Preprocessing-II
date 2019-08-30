@@ -182,12 +182,23 @@ header {
     flex-flow: row-reverse wrap;
   }
 }
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
 nav {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
   width: 80%;
   text-decoration: none;
+}
+@media (max-width: 800px) {
+  nav {
+    padding-top: 2%;
+  }
 }
 a {
   font-size: 1.5rem;
@@ -299,5 +310,26 @@ a {
   }
   .home .content-pick .btn {
     width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  h2 {
+    text-align: left;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+    padding: 4px 6px;
+  }
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+  }
+  .home .content-pick .btn {
+    width: 50%;
   }
 }
