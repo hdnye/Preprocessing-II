@@ -1,32 +1,39 @@
 .home {
-
+     
+    
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
+    .top-content {
+      padding: 2%;
+      border-bottom: 2px lightgrey dashed;
+  }
    
     
     .text-content {
       width: 48%;
-      padding-right: 1%;
+      padding: 3%;
     }
 
     .img-content {
       width: 48%;
-      padding-left: 1%;
+      padding: 3%;
 
       img {
         border-radius: 10px;
       }
     }
   }
-
-  .inverse-content {
+       
+    .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+      
 
+    
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -45,17 +52,97 @@
     img {
       border-radius: 10px;
     }
+    
+     
   }
+
 
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+   
+    .btn {
+
+      .button(1px; solid);
+      
+      &:hover {
+      background: white;
+      color: teal;
+        
+      .button:active(){
+
+        }
+      }
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
     }
   }
-}// home
+// home
+
+}
+
+@media @mobile {
+  h2 {
+    text-align: left;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+    padding: 4px 6px;
+  }
+  .home .content-section .text-content  {
+    display: flex;
+    flex-direction: column;
+     width: 100%;
+  }
+  
+  .home .content-section .img-content {
+    width: 100%;
+  }
+  
+  .home .content-destination {
+    width: 100%;
+  }
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+  }
+  .home .content-pick .destination  {
+    width: 100%;
+  }
+.home .content-pick .btn {
+  width: 100%;
+}
+}
+
+@media @tablet {
+  h2 {
+    text-align: left;
+  }
+ 
+  .container {
+    width: 100%;
+    margin: auto;
+    padding: 4px 6px;
+  }
+  .home .content-pick  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+        
+  }
+  .home .content-pick .destination  {
+    width: 100%;
+  }
+.home .content-pick .btn {
+  width: 50%;
+}
+
+
+
+}

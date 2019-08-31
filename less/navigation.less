@@ -1,1 +1,38 @@
 // Navigation Styles here
+header  {
+    .display(space-around, center);
+    border-bottom: 2px lightgrey dashed;
+    width: 100%;
+    padding: 5% 0 2% 0;
+    
+ 
+    @media @mobile {
+      display: flex;
+      flex-flow: row-reverse wrap;
+     
+  }  
+      @media @tablet {
+        display: flex;
+        flex-flow: column wrap;
+      }
+  
+}
+  nav  {
+     .display(space-around; flex-end);
+     width: 80%;
+     text-decoration: none;
+     
+     @media @tablet {
+         padding-top: 2%;
+     }
+}
+
+  a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: black;
+  }
+  
+
+    
